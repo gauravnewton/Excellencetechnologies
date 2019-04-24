@@ -2,7 +2,7 @@
   include 'connection.php';
   $conn=  createConnection();
   $opt = $_GET['opt'];
-  $sql="select * from userData order by id desc limit 5;";
+  $sql="select * from userData order by id desc;";
   $stmt=$conn->prepare($sql);
 
   $stmt->execute();

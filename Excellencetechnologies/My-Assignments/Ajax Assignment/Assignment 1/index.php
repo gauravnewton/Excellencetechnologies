@@ -12,6 +12,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
+  <!-- jquery data table cdn -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8" async defer></script>
 
 </head>
 <body onload="grabingDetails()">
@@ -21,10 +25,10 @@
     <div class="col-sm-12">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h2 class="text-center">Ajax data fetch from db auto refresh after 2 sec.</h2>
+          <h2 class="text-center">Ajax data fetch from db</h2>
         </div>
         <div class="panel-body">
-            <table class="table table-bordered text-center">
+            <table class="table table-bordered text-center" id="myTable">
               <thead>
                 <tr>
                   <th class="text-center">Name</th>
@@ -35,7 +39,25 @@
               </thead>
               
               <tbody id="data">
+                <?php
+                  include 'connection.php';
+                    $conn=  createConnection();
+                    //$opt = $_GET['opt'];
+                    $sql="select * from userData order by id desc;";
+                    $stmt=$conn->prepare($sql);
 
+                    $stmt->execute();
+                    $data=$stmt->fetchall();
+                    foreach($data as $row)
+                     {
+                      echo "<tr>";
+                      echo "<td>".$row['Name']."</td>";
+                      echo "<td>".$row['Email']."</td>";
+                      echo "<td>".$row['Message']."</td>";
+                      echo "<td>".$row['Date']."</td>";
+                      echo "</tr>";
+                     }
+                ?>
               </tbody>
             </table>
           </div>
@@ -55,7 +77,9 @@
   var count = 0;
 function grabingDetails()
 { count++;
-  document.getElementById("count").innerHTML = "Data Refereshed ...... "+count+" times.";
+  //document.getElementById("count").innerHTML = "Data Refereshed ...... "+count+" times.";
+    document.getElementById("count").innerHTML = "Data Refereshed ...... Blocked now";
+
   //alert("Data Refreshed... "+count+" times.");
   var xmlhttp;
 
@@ -81,7 +105,15 @@ function grabingDetails()
 }
 </script>
 
-<script>setInterval(grabingDetails, 2000);</script>
-
+<script>
+  //setInterval(grabingDetails, 2000);
+</script>
+<script>
+    $(document).ready( function () {
+      $('#myTable').DataTable({
+        "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]]
+      });
+  } );
+</script>
 </body>
 </html>
