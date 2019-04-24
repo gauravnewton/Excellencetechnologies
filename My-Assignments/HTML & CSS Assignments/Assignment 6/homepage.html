@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- file updated -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Assigment 6</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<style>
+	.heading {
+	  font-family: consolas;
+	  border: 2px solid #5A3B3B;
+	  border-radius: 5px;
+	  border-bottom: none;
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
+	  margin-bottom: 0;
+	  padding: 5px;
+	  background:#5A3B3B;
+	  color:#fff;
+	  font-weight: bold;
+	}
+
+	.box-data  {
+	  font-family: Consolas;
+	  border: 2px solid #5A3B3B;
+	  border-radius: 5px;
+	  border-top: none;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	  margin-top: 0;
+	  padding: 10px 10px 10px 25px;
+	  background-color: #f2f2f2;
+	}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 10px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #5A3B3B;
+  color: white;
+  font-size: 10px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+} 
+		  
+			ul{
+	        padding: 0;
+	        list-style: none;
+	        background: #5A3B3B;
+	        font-weight: bold;
+	    }
+	    ul li{
+	        display: inline-block;
+	        position: relative;
+	        line-height: 21px;
+	        text-align: left;
+
+	    }
+	    ul li a{
+	        display: block;
+	        padding: 8px 25px;
+	        color: #fff;
+	        text-decoration: none;
+	    }
+
+
+	    .link{
+	    	color:#5A3B3B;
+	    }
+
+
+	    .banner {
+		  position: relative;
+		  font-family: Arial;
+		}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #C4C2BF;
+  color:black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 0px 0px 0px 25px;
+}
+
+
+
+.fluid {
+	background:url(http://namhah.com/images/1.jpg);
+}
+
+.panel-transparent {
+	background: none;
+}
+
+.panel-transparent .panel-heading{
+    background: rgba(122, 130, 136, 0.2)!important;
+}
+
+.panel-transparent .panel-body{
+    background: rgba(46, 51, 56, 0.2)!important;
+}
+	</style>
+</head>
+<body background="assets/images/background.png" style="margin-bottom:20px;">
+	<div class="container" >
+		<div class="row" style=" background-color:#fff; border-radius:0px 0px 25px 25px; background-image: linear-gradient(#FBFBFB, #DBDBDB); ">
+			<div class="col-sm-3" style="padding-top:25px;">
+				<img src="assets/images/logo.png" />
+			</div>
+			
+			<div class="col-sm-6" >
+				<img src="assets/images/ingredi.png" alt="site-logo" height="25px" width="20%"  class="headerText" style="width:60%;"/>
+
+				<img src="assets/images/leaf1.png" alt="leaf"    />
+
+
+		  		<img src="assets/images/leaf2.png" alt="leaf"/>
+
+			</div>
+
+			<div class="col-sm-3" style="text-align: center; color:#7E9D8D;">
+				Starwest Sites<br/>
+				<a href="#" class="link">Ingerdients  </a> &nbsp; |
+				<a href="#" class="link">Retails </a> &nbsp; |
+				<a href="#" class="link">Wholesale </a> <br/>
+				<form class="example" action="" style="padding-top:10px;">
+				  <input type="text" placeholder="Search Products" name="search">
+				  <button type="submit"><b>Go</b></button>
+				</form>
+			</div>
+
+			<div class="col-sm-12" style="margin:0px 0px -9px 0px; padding:0px; " >
+				<ul style="border-radius: 0px 0px 25px 25px;">
+			        <li><a href="#" style="border-right:1px solid white; text-decoration: none;">Home</a></li>
+			        <li>
+			            <a href="#" style="border-right:1px solid white; text-decoration: none;">About Us</a>
+			            
+			        </li>
+			        <li><a href="#" style="border-right:1px solid white; text-decoration: none;"> Quality Assurance</a></li>
+			        <li><a href="#" style="border-right:1px solid white; text-decoration: none;">Sustainability</a></li>
+			        <li><a href="#" style="border-right:1px solid white; text-decoration: none;">CONTACT</a></li>
+			        <li class="nav-bar-phone" style="float:right; color:#fff; padding:10px 10px 0px 0px;">Ph : 1-888-800-4372</li>
+			    </ul>			
+			</div>
+		</div>
+
+
+		
+
+
+		<div class="row" style="background-color:#fff; border-radius:25px 25px 25px 25px; margin-top: 20px;">
+			<div class="col-sm-3" style="padding-top:20px;">
+				<div class="row">
+					<div class="col-sm-12">
+						<p class="heading">PRODUCTS</p>
+						<p class="box-data">
+							-Botanicals<br/>  -Organic Botanicals<br/> -Spices<br/> -Organic Spices<br/> -Spice Blends<br/> -Teas <br/>-Other Products<br/><br/>
+							<img class="img img-responsive" src="assets/images/brouch.png" />
+						</p>
+					</div>
+
+					<div class="col-sm-12">
+						
+
+
+
+
+
+
+						<div class="panel panel-default" style="border: 2px solid #5A3B3B; background:url('assets/images/lady.png');">
+							<div class="panel-heading" style="background-image: linear-gradient(#FBFBFB, #DBDBDB);  opacity: 0.6; filter: alpha(opacity=60); height:35px; text-align: center;"> 
+								<strong>NEED ASSISTANCE?</strong>
+							</div>
+
+							<div class="panel-body" style="height:120px;">
+						  		
+							</div>
+
+							<div class="panel-footer" style="background-image: linear-gradient(#FBFBFB, #DBDBDB);  opacity: 0.6; filter: alpha(opacity=60); height:35px; text-align: center;"> 
+								<strong>CALL: 1-888-800-4372</strong>
+							</div>
+
+						</div>
+					</div>
+					<!--
+					<div class="col-sm-12 base">
+						<p style="font-family: Consolas;
+							  border: 2px solid #5A3B3B;
+							  border-radius: 5px;
+							  border-radius: 5px 5px 5px 5px;
+							  margin-top: 0;
+							  padding: 10px 10px 10px 25px;
+							  padding: :0px;
+							  background-color: #f2f2f2;">
+						  
+						  <img src="assets/images/lady.png" alt="lady" class="img img-responsive" ;">
+						</p>
+					</div>
+
+				-->
+
+
+					<div class="col-sm-12">
+						<p class="heading">GET UPDATES</p>
+						<p class="box-data" style="text-align: center;">
+							<strong>Get automatic updates on our certifications</strong><br/>
+							<input type="checkbox" name=""> Organic Updates<br/>
+							<input type="checkbox" name=""> Kosher Updates<br/>
+							<input type="text" name="" placeholder="Name" style="margin-bottom:10px;"/><br/>
+							<input type="text" name="" placeholder="Email" /><br/>
+							<button style="border:none; background-color:#5A3B3B; color:#fff;  margin-top:10px;">SIGN UP</button><br/>
+							
+								
+									<img src="assets/images/newup2.png" style="margin:15px;" />
+									<img src="assets/images/newup1.png"  />
+							
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class="col-sm-9 " style="padding:0px;">
+
+				<div class="banner">
+					<img src="assets/images/banner.png" class="img img-responsive"  style=" border-radius:0px 25px 0px 25px; height:450px; width:100%;"/>
+					<div class="text-block" style="opacity: 0.8;
+  																filter: alpha(opacity=80);">
+					    <h1>Premium Ingredient <br/>Supplier of <b> Botanicals<br/> Herbs</a> </b>and <b> Spices</b></h1>
+					</div>
+					<div class="bottom-left text-block" style=" width:125px; opacity: 0.8; filter: alpha(opacity=80);">
+						<a href="#">
+							<<
+						</a> 
+						<a href="#"> 1	</a>
+						<a href="#"> 2  </a>
+						<a href="#"> 3  </a>
+						<a href="#"> >> </a>
+					</div>
+				</div>
+
+				
+
+				<div class="row">
+					<div class="col-sm-8" >
+						<h3 style="padding-left:20px; color:#7E9D8D">Starwest Botanicals, Inc</h3>
+
+						<div class="row">
+							<div class="col-sm-1">
+								<img src="assets/images/bullet.png" style="padding-right:15px;"/>
+							</div>
+							<div class="col-sm-11">
+								Manufacture & process, with an emphasis on certified organic ingredients.
+							</div>
+						</div>
+						
+
+
+						<div class="row">
+							<div class="col-sm-1">
+								<img src="assets/images/bullet.png" />
+							</div>
+							<div class="col-sm-11">
+								Siupplies quantities from 25 pounds to full containers.
+							</div>
+						</div>
+
+
+						<div class="row">
+							<div class="col-sm-1">
+								<img src="assets/images/bullet.png"/>
+							</div>
+							<div class="col-sm-11">
+								Complete milling, blending & formulating services.
+							</div>
+						</div>
+
+
+						<div class="row">
+							<div class="col-sm-1">
+								<img src="assets/images/bullet.png" />
+							</div>
+							<div class="col-sm-11">
+								Modern In-house Quality Cotrol laboratory, providing efficient microbiology, heavy metal & identity testing.
+							</div>
+						</div>
+
+
+						<div class="row">
+							<div class="col-sm-1">
+								<img src="assets/images/bullet.png" />
+							</div>
+							<div class="col-sm-11">
+								cGMP~ & FDA-compliant manufacturing protocols are followed.
+							</div>
+						</div>
+							
+
+						<div class="row">
+							<div class="col-sm-1">
+								<img src="assets/images/bullet.png" />
+							</div>
+							<div class="col-sm-11">
+								Specification sheets, Certificates of Analysis, Material Safety Data Sheets & other documents are provided.
+							</div>
+						</div>
+							
+
+
+						<div class="row">
+							<div class="col-sm-1">
+								<img src="assets/images/bullet.png" />
+							</div>
+							<div class="col-sm-11">
+								82,000 sq. ft. wharehouse enables us to maintain a sizeable product inventory & maintain adequate stock levels.Specification sheets, Certificates of Analysis, Material Safety Data Sheets & other documents are provided.
+							</div>
+						</div>
+
+					</div>
+
+				<div class="col-sm-4" style="padding:10px 25px 10px 10px;">
+					<div class="row">
+						<div class="col-sm-12">
+							<p class="heading">LATEST NEWS</p>
+							<p class="box-data">
+								And thus have these naked Nanfuckers, these sea hermits, issuing from blah....<a href="#">Read More</a><br/>
+								"How have you bewitched them?" asked Tars Tarkas one afternoon, when ....<a href="#"> Read More</a>
+							</p>
+						</div>
+
+						<div class="col-sm-12">
+							<p class="heading">CERTIFICATIONS</p>
+							<p class="box-data">
+								-2009 AB Audit Rreport<br/>-Organic System Plan<br/>-Organic Certificatre of Complance<br/>-Kosher Certificate<br/>
+							</p>
+						</div>
+					</div>
+				</div>	
+
+
+				</div>
+			</div>
+
+			<div class="row" >
+				<div class="col-sm-12">
+					<div class="col-sm-12" style="background-image: linear-gradient(#FBFBFB, #DBDBDB);border-radius: 0px 0px 25px 25px;">
+						<div class="row">
+
+							<div class="col-sm-2"  >
+								<img src="assets/images/footerlogo.png" style="padding:20px 0px 0px 10px;"/>
+							</div>
+
+							<div class="col-sm-2" style="border-left:1px solid #E7E7E7; border-right:1px solid #E7E7E7;">
+								<strong style="color: #5A3B3B; margin-top: -20px;">PRODUCTS</strong><br/>
+								Botanicals<br/> Organic Boanicals <br/>Spices  <br/>Organic Spices
+							</div>
+
+							<div class="col-sm-2" style="border-right:1px solid #E7E7E7;">
+								<strong style="color: #5A3B3B; margin-top: -20px;">INFO</strong><br/>
+								About Us <br/> Contact Us <br/> Certificates <br/> Services
+							</div>
+
+							<div class="col-sm-2" style="border-right:1px solid #E7E7E7;">
+								<strong style="color: #5A3B3B; margin-top: -20px;">STARWEST SITES</strong><br/>
+								Ingredients <br/> Retail <br/> Wholesale <br/> &nbsp;
+							</div>
+
+							<div class="col-sm-2" style="border-right:1px solid #E7E7E7;">
+								<strong >LINKS</strong><br/>
+								Disclaimer<br/> Privacy <br/> &nbsp; <br/> &nbsp;
+							</div>
+
+							<div class="col-sm-2" style="padding:20px 10px 0px 20px;">
+								2010 Starwestherb.com<br/>All Rights Reserved.
+							</div>
+
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+
+
+
+	</div>
+</body>
+</html>
