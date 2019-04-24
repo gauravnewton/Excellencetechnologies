@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Assignment 4</title>
+	<link rel="stylesheet" href="">
+	<style type="text/css" media="screen">
+		.header{
+			background-color: #A3A3A3;
+		}
+		table{
+			  text-align:center;
+			  table-layout: fixed ;
+			  width: 100% ;
+
+		}
+		.sr-no{
+			width:150px;
+		}
+		tr:nth-child(even) {background-color: #f2f2f2;}
+	</style>
+</head>
+<body>
+	<table border="1" width="100%" cellspacing="0" cellpadding="5">
+		<thead>
+			<tr class="header">
+				<th colspan="2">SL No/ Date</th>
+				<th>Item</th>
+				<th>Quantity</th>
+				<th>Color</th>
+				<th>Total Price</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="sr-no">1</td>
+				<td class="item">2011-05-05</td>
+				<td>Item A</td>
+				<td>15</td>
+				<td>Blue</td>
+				<td>1500</td>
+			</tr>
+
+			<tr>
+				<td class="sr-no">2</td>
+				<td class="item">2011-05-05</td>
+				<td>Item B</td>
+				<td>25</td>
+				<td>Red</td>
+				<td>2500</td>
+			</tr>
+
+			<tr>
+				<td class="sr-no">3</td>
+				<td class="item">2011-05-05</td>
+				<td rowspan="2">Item C</td>
+				<td>12</td>
+				<td>Red</td>
+				<td>1200</td>
+			</tr>
+
+			<tr>
+				<td class="sr-no"></td>
+				<td class="item">2011-05-05</td>
+				
+				<td>22</td>
+				<td>Red</td>
+				<td>1500</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
