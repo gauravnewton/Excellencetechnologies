@@ -1,1 +1,8 @@
-please see connection.php file for db configuration
+configuration details
+
+
+
+dbname : JQueryTable
+dbusername : root
+dbpass : root
+table : userData
