@@ -1,1 +1,0 @@
-please see connection.php file for db configuration

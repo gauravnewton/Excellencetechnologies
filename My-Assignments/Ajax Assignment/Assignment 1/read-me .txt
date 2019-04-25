@@ -1,0 +1,8 @@
+configuration details
+
+
+
+dbname : JQueryTable
+dbusername : root
+dbpass : root
+table : userData
