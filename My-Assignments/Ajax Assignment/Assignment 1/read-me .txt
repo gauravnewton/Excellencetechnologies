@@ -1,4 +1,4 @@
-configuration details
+database configuration details
 
 
 
