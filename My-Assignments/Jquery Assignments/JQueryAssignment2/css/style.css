@@ -1,0 +1,21 @@
+.btnRemove{
+		background-color: Transparent;
+	    background-repeat:no-repeat;
+	    border: none;
+	    cursor:pointer;
+	    overflow: hidden;
+	    outline:none;
+	}
+	.btnAdd{
+		border:none; margin-top:20px; background-color: Transparent;
+	    background-repeat:no-repeat;
+	    border: none;
+	    cursor:pointer;
+	    overflow: hidden;
+	    outline:none;
+	}
+	.btnBrowse{
+		color:transparent; 
+		width:100%;
+
+	}
